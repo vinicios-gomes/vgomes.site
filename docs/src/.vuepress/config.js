@@ -33,12 +33,15 @@ module.exports = {
     editLinkText: '',
     lastUpdated: false,
     nav: [{
-        text: 'Cloud Vgomes',
+        text: 'Cloud',
         link: 'https://cloud.vgomes.site'
       }, {
         text: 'Firefly',
         link: 'https://fireflyiii.vgomes.site'
       }, {
+        text: 'CRM',
+        link: 'https://suitecrm.vgomes.site'
+      },{
           text: 'VuePress Doc',
           link: 'https://v1.vuepress.vuejs.org'
       }

@@ -9,5 +9,5 @@ echo "Done"
 if [ ! -f /usr/local/bin/yarn ]; then
     npm install -g yarn
 fi
-
+yarn
 yarn build
