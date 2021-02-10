@@ -1,13 +1,13 @@
 #!/bin/bash
 
-if [ ! -f /usr/local/bin/yarn ]; then
-    npm install -g yarn;
-fi
-
 if [ ! -d node_modules ]; then
     echo "Install packages publicar"
-    yarn;
+    npm install -f;
 fi
 echo "Done"
+
+if [ ! -f /usr/local/bin/yarn ]; then
+    npm install -g yarn
+fi
 
 yarn build
