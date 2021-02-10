@@ -1,0 +1,19 @@
+{
+  "name": "vgomes.site",
+  "version": "0.0.1",
+  "description": "Coming Soon!",
+  "main": "index.js",
+  "authors": {
+    "name": "Vinicios Gomes",
+    "email": "viniciusgomesviana@gmail.com"
+  },
+  "repository": "/vgomes.site",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}

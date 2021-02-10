@@ -1,0 +1,26 @@
+version: '3.7'
+
+networks: 
+  reverse-proxy:
+    external: true
+    name: reverse-proxy
+
+services: 
+  nodejs-vgomes.site:
+    image: node:lts
+    working_dir: '/app'
+    volumes:
+      - ./:/app
+    command: bash -c "sh .docker/nodejs/entrypoint.sh"
+
+  vgomes.site:
+    image: nginx:stable-apline
+    volumes:
+      - ./:/app
+      - .docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    environment: 
+      - VIRTUAL_HOST=www.vgomes.site
+      - LETSENCRYPT_HOST=www.vgomes.site
+      - LETSENCRYPT_EMAIL=adm@vgomes.site
+    networks: 
+      - reverse-proxy
