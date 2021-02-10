@@ -32,10 +32,15 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
-    nav: [
-      {
-        text: 'VuePress Doc',
-        link: 'https://v1.vuepress.vuejs.org'
+    nav: [{
+        text: 'Cloud Vgomes',
+        link: 'https://cloud.vgomes.site'
+      }, {
+        text: 'Firefly',
+        link: 'https://fireflyiii.vgomes.site'
+      }, {
+          text: 'VuePress Doc',
+          link: 'https://v1.vuepress.vuejs.org'
       }
     ],
     sidebar: {}
